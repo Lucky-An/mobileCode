@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>viewPort</title>
     <style type="text/less">
+    @rem:750/16rem;
         * {
             margin: 0;
             padding: 0;
@@ -24,34 +25,34 @@
 
                 .header {
                     width: 100%;
-                    height: 268px;
+                    height: 268/@rem;
                     background-color: red;
 
                     .title {
                         width: 100%;
-                        height: 212px;
+                        height: 212/@rem;
                         box-sizing: border-box;
-                        padding: 48px 24px 36px 48px;
+                        padding: 48/@rem 24/@rem 36/@rem 48/@rem;
                         background: rgb(96, 100, 106);
 
                         img {
-                            width: 128px;
-                            height: 128px;
-                            border-radius: 10px;
+                            width: 128/@rem;
+                            height: 128/@rem;
+                            border-radius: 10/@rem;
                             float: left;
                         }
 
                         .right {
                             float: left;
-                            margin-left: 32px;
+                            margin-left: 32/@rem;
 
                             .brand {
-                                margin-top: 4px;
-
+                                margin-top: 4/@rem;
+                                font-size: 32/@rem;
                                 i {
                                     display: inline-block;
-                                    width: 60px;
-                                    height: 36px;
+                                    width: 60/@rem;
+                                    height: 36/@rem;
                                     background-image: url(./img/brand@2x.png);
                                     background-size: 100%;
                                     background-repeat: no-repeat;
@@ -60,46 +61,47 @@
 
                                 span {
 
-                                    font-size: 32px;
-                                    margin-left: 12px;
+                                    
+                                    margin-left: 12/@rem;
                                     color: rgb(255, 255, 255);
-                                    line-height: 36px;
+                                    line-height: 36/@rem;
                                     font-weight: bold;
                                     vertical-align: middle;
                                 }
                             }
 
                             .delivery {
-                                margin-top: 16px;
+                                font-size: 24/@rem;
+                                margin-top: 16/@rem;
 
                                 span {
 
-                                    font-size: 24px;
+                                    
                                     font-weight: 200;
-                                    line-height: 24px;
+                                    line-height: 24/@rem;
                                     color: rgb(255, 255, 255);
                                 }
                             }
 
                             .reduction {
-                                margin-top: 20px;
-
+                                margin-top: 20/@rem;
+                                font-size: 20/@rem;
                                 i {
                                     display: inline-block;
-                                    width: 24px;
-                                    height: 24px;
+                                    width: 24/@rem;
+                                    height: 24/@rem;
                                     background-image: url(./img/decrease_1@2x.png);
                                     background-size: 100%;
                                     background-repeat: no-repeat;
-                                    margin-right: 8px;
+                                    margin-right: 8/@rem;
                                     vertical-align: middle;
                                 }
 
                                 span {
 
-                                    font-size: 20px;
+                                    
                                     font-weight: 200;
-                                    line-height: 24px;
+                                    line-height: 24/@rem;
                                     color: rgb(255, 255, 255);
                                     vertical-align: middle;
                                 }
@@ -109,42 +111,42 @@
 
                     .announcement {
                         width: 100%;
-                        height: 56px;
+                        height: 56/@rem;
                         background: rgba(7, 17, 27, 0.1);
                     }
                 }
 
                 .nav {
                     width: 100%;
-                    height: 80px;
-                    line-height: 80px;
+                    height: 80/@rem;
+                    line-height: 80/@rem;
                     text-align: center;
-                    border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+                    border-bottom: 1/@rem solid rgba(7, 17, 27, 0.1);
 
                     .product {
                         float: left;
-                        height: 80px;
+                        height: 80/@rem;
                         width: 33.33%;
-                        font-size: 28px;
-                        line-height: 80px;
+                        font-size: 28/@rem;
+                        line-height: 80/@rem;
                         color: rgb(240, 20, 20);
                     }
 
                     .appraisal {
                         float: left;
-                        height: 80px;
+                        height: 80/@rem;
                         width: 33.33%;
-                        font-size: 28px;
-                        line-height: 80px;
+                        font-size: 28/@rem;
+                        line-height: 80/@rem;
                         color: rgb(77, 85, 93);
                     }
 
                     .merchant {
                         float: left;
-                        height: 80px;
+                        height: 80/@rem;
                         width: 33.34%;
-                        font-size: 28px;
-                        line-height: 80px;
+                        font-size: 28/@rem;
+                        line-height: 80/@rem;
                         color: rgb(77, 85, 93);
                     }
                 }
@@ -165,7 +167,7 @@
                 <!-- 配送 -->
                 <div class="delivery">
                     <span>蜂鸟专送/38分钟送达</span>
-                </div>
+                    </div>
                 <!-- 满减 -->
                 <div class="reduction">
                     <i></i>
@@ -193,15 +195,13 @@
 
 <!-- 引用less需要在尾部 -->
 <script src="https://cdn.bootcdn.net/ajax/libs/less.js/3.11.1/less.min.js"></script>
-<script type="text/javascript" >
-// 该方法通过系统缩放将所有设备的视口调整为设计图尺寸来实现不同屏幕尺寸的设备之间的适配，
-// 接下来只需要所有的尺寸都按照设计图的尺寸来就好了
-// ! 将所有设备视口调整为  设计图尺寸
-(function () {
-    var targetW = 750 // 设计图宽度
-    var idealViewport = document.documentElement.clientWidth  //拿到理想视口的宽度
-    var scale = idealViewport/targetW //比例
-    var mateNode = document.querySelector("meta[name='viewport']") //拿到mate标签
-    mateNode.content = `initial-scale=${scale},user-scalable=no,minimum-scale=${scale},maximum-scale=${scale}`
-})()
+<script>
+    //目的: 将所有设备的布局视口 调整为16rem
+    //包括设计图 也以16rem来衡量
+    (function(){
+        var styleNode = document.createElement("style");
+        var w = document.documentElement.clientWidth/16;
+        styleNode.innerHTML = `html{font-size:${w}px}`;
+        document.head.appendChild(styleNode)
+    })()
 </script>
