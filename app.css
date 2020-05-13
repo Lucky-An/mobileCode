@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app .header {
+  width: 100%;
+  height: 268px;
+  background-color: red;
+}
+#app .header .title {
+  width: 100%;
+  height: 212px;
+  box-sizing: border-box;
+  padding: 48px 24px 36px 48px;
+  background: #60646a;
+}
+#app .header .title img {
+  width: 128px;
+  height: 128px;
+  border-radius: 10px;
+  float: left;
+}
+#app .header .title .right {
+  float: left;
+  margin-left: 32px;
+}
+#app .header .title .right .brand {
+  margin-top: 4px;
+}
+#app .header .title .right .brand i {
+  display: inline-block;
+  width: 60px;
+  height: 36px;
+  background-image: url(img/brand@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+#app .header .title .right .brand span {
+  font-size: 32px;
+  margin-left: 12px;
+  color: #ffffff;
+  line-height: 36px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#app .header .title .right .delivery {
+  margin-top: 16px;
+}
+#app .header .title .right .delivery span {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #ffffff;
+}
+#app .header .title .right .reduction {
+  margin-top: 20px;
+}
+#app .header .title .right .reduction i {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(img/decrease_1@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#app .header .title .right .reduction span {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 24px;
+  color: #ffffff;
+  vertical-align: middle;
+}
+#app .header .announcement {
+  width: 100%;
+  height: 56px;
+  background: rgba(7, 17, 27, 0.1);
+}
+#app .nav {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+}
+#app .nav .product {
+  float: left;
+  height: 80px;
+  width: 33.33%;
+  font-size: 28px;
+  line-height: 80px;
+  color: #f01414;
+}
+#app .nav .appraisal {
+  float: left;
+  height: 80px;
+  width: 33.33%;
+  font-size: 28px;
+  line-height: 80px;
+  color: #4d555d;
+}
+#app .nav .merchant {
+  float: left;
+  height: 80px;
+  width: 33.34%;
+  font-size: 28px;
+  line-height: 80px;
+  color: #4d555d;
+}

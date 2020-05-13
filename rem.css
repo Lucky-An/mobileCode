@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#app .header {
+  width: 100%;
+  height: 5.71733333rem;
+  background-color: red;
+}
+#app .header .title {
+  width: 100%;
+  height: 4.52266667rem;
+  box-sizing: border-box;
+  padding: 1.024rem 0.512rem 0.768rem 1.024rem;
+  background: #60646a;
+}
+#app .header .title img {
+  width: 2.73066667rem;
+  height: 2.73066667rem;
+  border-radius: 0.21333333rem;
+  float: left;
+}
+#app .header .title .right {
+  float: left;
+  margin-left: 0.68266667rem;
+}
+#app .header .title .right .brand {
+  margin-top: 0.08533333rem;
+}
+#app .header .title .right .brand i {
+  display: inline-block;
+  width: 1.28rem;
+  height: 0.768rem;
+  background-image: url(img/brand@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+#app .header .title .right .brand span {
+  font-size: 0.68266667rem;
+  margin-left: 0.256rem;
+  color: #ffffff;
+  line-height: 0.768rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#app .header .title .right .delivery {
+  margin-top: 0.34133333rem;
+}
+#app .header .title .right .delivery span {
+  font-size: 0.512rem;
+  font-weight: 200;
+  line-height: 0.512rem;
+  color: #ffffff;
+}
+#app .header .title .right .reduction {
+  margin-top: 0.42666667rem;
+}
+#app .header .title .right .reduction i {
+  display: inline-block;
+  width: 0.512rem;
+  height: 0.512rem;
+  background-image: url(img/decrease_1@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 0.17066667rem;
+  vertical-align: middle;
+}
+#app .header .title .right .reduction span {
+  font-size: 0.42666667rem;
+  font-weight: 200;
+  line-height: 0.512rem;
+  color: #ffffff;
+  vertical-align: middle;
+}
+#app .header .announcement {
+  width: 100%;
+  height: 1.19466667rem;
+  background: rgba(7, 17, 27, 0.1);
+}
+#app .nav {
+  width: 100%;
+  height: 1.70666667rem;
+  line-height: 1.70666667rem;
+  text-align: center;
+  border-bottom: 0.02133333rem solid rgba(7, 17, 27, 0.1);
+}
+#app .nav .product {
+  float: left;
+  height: 1.70666667rem;
+  width: 33.33%;
+  font-size: 0.59733333rem;
+  line-height: 1.70666667rem;
+  color: #f01414;
+}
+#app .nav .appraisal {
+  float: left;
+  height: 1.70666667rem;
+  width: 33.33%;
+  font-size: 0.59733333rem;
+  line-height: 1.70666667rem;
+  color: #4d555d;
+}
+#app .nav .merchant {
+  float: left;
+  height: 1.70666667rem;
+  width: 33.34%;
+  font-size: 0.59733333rem;
+  line-height: 1.70666667rem;
+  color: #4d555d;
+}

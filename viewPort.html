@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>viewPort</title>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <div id="app">
+        <div class="header">
+            <div class="title">
+             <img src="./img/avatar.jpg" alt="">
+                <div class='right'>
+                <!-- 品牌 -->
+                <div class="brand">
+                    <i></i>
+                    <span>粥品香坊(大运村)</span>
+                </div>
+                <!-- 配送 -->
+                <div class="delivery">
+                    <span>蜂鸟专送/38分钟送达</span>
+                    </div>
+                <!-- 满减 -->
+                <div class="reduction">
+                    <i></i>
+                    <span>在线支付满28减5,满50减10</span>
+                </div>
+            </div>
+        </div>
+        <div class="announcement">
+        </div>
+        </div>
+        <nav class="nav">
+            <div class="product">
+                商品
+            </div>
+            <div class="appraisal">
+                评价
+            </div>
+            <div class="merchant">
+                商家
+            </div>
+        </nav>
+    </div>
+</body>
+</html>
+
+<!-- 引用less需要在尾部 -->
+<script src="https://cdn.bootcdn.net/ajax/libs/less.js/3.11.1/less.min.js"></script>
+<script type="text/javascript" >
+// 该方法通过系统缩放将所有设备的视口调整为设计图尺寸来实现不同屏幕尺寸的设备之间的适配，
+// 接下来只需要所有的尺寸都按照设计图的尺寸来就好了
+// ! 将所有设备视口调整为  设计图尺寸
+(function () {
+    var targetW = 750 // 设计图宽度
+    var idealViewport = document.documentElement.clientWidth  //拿到理想视口的宽度
+    var scale = idealViewport/targetW //比例
+    var mateNode = document.querySelector("meta[name='viewport']") //拿到mate标签
+    mateNode.content = `initial-scale=${scale},user-scalable=no,minimum-scale=${scale},maximum-scale=${scale}`
+})()
+</script>

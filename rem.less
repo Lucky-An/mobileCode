@@ -1,0 +1,146 @@
+@rem: 750/16rem;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .header {
+        width: 100%;
+        height: 268/@rem;
+        background-color: red;
+
+        .title {
+            width: 100%;
+            height: 212/@rem;
+            box-sizing: border-box;
+            padding: 48/@rem 24/@rem 36/@rem 48/@rem;
+            background: rgb(96, 100, 106);
+
+            img {
+                width: 128/@rem;
+                height: 128/@rem;
+                border-radius: 10/@rem;
+                float: left;
+            }
+
+            .right {
+                float: left;
+                margin-left: 32/@rem;
+
+                .brand {
+                    margin-top: 4/@rem;
+
+                    i {
+                        display: inline-block;
+                        width: 60/@rem;
+                        height: 36/@rem;
+                        background-image: url(./img/brand@2x.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        vertical-align: middle;
+                    }
+
+                    span {
+
+                        font-size: 32/@rem;
+                        margin-left: 12/@rem;
+                        color: rgb(255, 255, 255);
+                        line-height: 36/@rem;
+                        font-weight: bold;
+                        vertical-align: middle;
+                    }
+                }
+
+                .delivery {
+                    margin-top: 16/@rem;
+
+                    span {
+
+                        font-size: 24/@rem;
+                        font-weight: 200;
+                        line-height: 24/@rem;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+
+                .reduction {
+                    margin-top: 20/@rem;
+
+                    i {
+                        display: inline-block;
+                        width: 24/@rem;
+                        height: 24/@rem;
+                        background-image: url(./img/decrease_1@2x.png);
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        margin-right: 8/@rem;
+                        vertical-align: middle;
+                    }
+
+                    span {
+
+                        font-size: 20/@rem;
+                        font-weight: 200;
+                        line-height: 24/@rem;
+                        color: rgb(255, 255, 255);
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+
+        .announcement {
+            width: 100%;
+            height: 56/@rem;
+            background: rgba(7, 17, 27, 0.1);
+        }
+    }
+
+    .nav {
+        width: 100%;
+        height: 80/@rem;
+        line-height: 80/@rem;
+        text-align: center;
+        border-bottom: 1/@rem solid rgba(7, 17, 27, 0.1);
+
+        .product {
+            float: left;
+            height: 80/@rem;
+            width: 33.33%;
+            font-size: 28/@rem;
+            line-height: 80/@rem;
+            color: rgb(240, 20, 20);
+        }
+
+        .appraisal {
+            float: left;
+            height: 80/@rem;
+            width: 33.33%;
+            font-size: 28/@rem;
+            line-height: 80/@rem;
+            color: rgb(77, 85, 93);
+        }
+
+        .merchant {
+            float: left;
+            height: 80/@rem;
+            width: 33.34%;
+            font-size: 28/@rem;
+            line-height: 80/@rem;
+            color: rgb(77, 85, 93);
+        }
+    }
+}
